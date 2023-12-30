@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromCode | Sign in</title>
+    <link rel="stylesheet" href="./css files/spinner.css">
+    <link rel="icon" href="./images/2.png">
+    <script src="./js/spinner.js" defer></script>
+    <link rel="stylesheet" href="./css files/sign_in.css">
+    <link rel="stylesheet" href="./css files/popup.css">
+   
+</head>
+<body>
+   
+    <section>
+        
+    <div class="login_box" >
+        <form action="">
+            <h2>Login</h2>
+            <div class="input_box">
+             <span class="icon"><ion-icon name="mail"></ion-icon></span>
+             <input type="email" name="email" id="emailInput" required>
+             <label for="email" >Email </label>
+            </div>
+            <div class="input_box">
+                <span class="icon"> <ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" name="password" id="passwordInput" required>
+                <label for="password">Password</label>
+               </div>
+               <div class="remember_forgot">
+               <label>
+                <input type="checkbox">Remember me
+               </label> 
+               <a href="#">Forgot Password?</a>
+               </div>
+               <div class="button" onclick="login()">Login</div>
+               <div class="register_link">
+                <p>Don't have an Account? <a href="./css files/sign_in.css">Register!</a></p>
+               </div>
+        </form>
+    </div>
+</section>
+
+<!--------------------------------- starting of the popup ----------------------->
+
+<div class="popup" id="popup">
+    <section class="image">
+        <h6 >You've made it!</h6> <br>
+        <img class="my-image" src="./images/2.png" alt="my image">
+    </section>
+          
+        <h2 >Thanks</h2>
+        <p>Your details have been submitted to our server successfully.</p>
+        <br>
+        <h4>You can now interact with PromCode</h4>
+       <div class="button100">
+         <a href="./promcode .html"  onclick="closePopup()">Ok</a> 
+    </div> 
+
+    </div>
+
+    </div>
+    <script>
+       
+let user=[
+    {email:"promesserukundo@gmail.com", password:"prom123"}
+]
+
+const emailInput=document.getElementById("emailInput")
+const passwordInput=document.getElementById("passwordInput")
+
+function login() {
+    const email=emailInput.value;
+    const password=passwordInput.value;
+    let loginSuccessful=false
+    user.forEach((user)=>{
+        if (user.email==email && user.password==password) {
+           alert("Login Successful") 
+           loginSuccessful=true
+           
+           setTimeout(() => {
+            popup.classList.add('open-popup')
+        }, 200);
+        
+        }
+    })
+    
+    if (!loginSuccessful) {
+        alert("User inputs not registered")   
+    }
+    
+}
+    </script>
+
+
+<div class="loader"></div>
+</body>
+</html>

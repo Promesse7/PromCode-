@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    margin-top: 0px;
+    width:300px ;
+}
+.top{
+    display: flex;
+    align-items: center;
+    background-color:#fff;
+    height: 50px;
+}
+.first{
+    background-color:grey;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(243, 239, 239);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+
+}
+.name{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    padding-left: 70px;
+    padding-right: 270px;
+}
+.log{
+background-color: #e02189 ;
+width: 100px;
+height: 45px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+color: #fff;
+margin-left: 90px;
+}
+.last{
+width: 150px;
+background-color: honeydew;
+border-radius: 30px;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 10px;
+box-decoration-break: none;
+text-align: center;
+outline: none;
+border: none;
+padding: 5px;
+margin-left: 20px;
+margin-right: 50px;
+color: #e02189;
+}
+
+.bottom{
+display: block;
+padding-top:0px;  
+}
+.one{
+    margin-top: 0px;
+background-color: rgb(0, 0, 0);
+width: px;
+}
+.dashboard{
+    display: flex;
+}
+.dashboard img{
+height: 93vh;
+}
+ul{
+list-style: none;
+background-color: rgb(159, 210, 223);
+height: 62vh;
+display: flex;
+flex-direction: column;
+align-content: space-between;
+width: 300px;
+}
+li{    
+padding: 2.35rem 2rem;
+border-bottom: 1px solid rgb(107, 106, 103);
+background-color: rgb(66, 66, 66);
+height: 10px;
+font-size: 20px;
+}
+a{
+text-decoration: none;  
+color: white;
+}
+
+li{
+    cursor: pointer;
+}
+.main11{
+    background-color: #e02189;
+    height: 95vh;
+    width: 80vw;
+}
