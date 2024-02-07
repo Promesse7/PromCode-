@@ -8,12 +8,38 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css files/style.css">
+    <link rel="stylesheet" href="./css files/promcode.css">
+ <link rel="icon" href="./images/ai_business_survey_-_article_image.png">
+<link rel="stylesheet" href="./css files/spinner.css">
+<script src="./js/spinner.js " defer> </script>
+ <script type="text/javascript">
+ function checkSearch()
+ {
+ if(!document.getElementById || !document.createTextNode){return;}
+ if(!document.getElementById('search')){return;}
+ var searchValue=document.getElementById('search').value;
+ if(searchValue=='')
+ {
+ alert('Please enter a search term before sending the form');
+ return false;
+ }
+ else if(searchValue=='JavaScript')
+ {
+ var really=confirm('"JavaScript" is a very common term.\n' + 'Do you really want to search for this?');
+ return really;
+ }
+ else
+ {
+ return true;
+ }
+ }
+ </script>
     <title>PromCode  Home</title>
 </head>
 <body>
     <div>
         <header id="home">
-            <div class="w3-top w3-light-gray">
+            <!-- <div class="w3-top w3-light-gray">
                 <div class="w3-row w3-padding w3-white">
                   <div class="w3-col s3">
                     <a href="#home" class="w3-button w3-block w3-white">Home</a>
@@ -28,7 +54,38 @@
                     <a href="#book" class="w3-button w3-block w3-white">Book</a>
                   </div>
                 </div>
-              </div> 
+              </div>  -->
+
+              <nav class="topbar">
+                <div class="top1">
+                <img class="image_ling" src="./images/ai_business_survey_-_article_image.png" >
+                <a href="#"><h1 class="promcode1">PromCode </h1> </a>
+                </div>
+                <div class="top_2">
+                <a href="./promhome.html"><h1> Home</h1></a>
+                </div>
+                <div class="top_3">
+                <a href="#"><h1> Portifolio </h1></a>
+                </div>
+                <div class="top_4">
+                <a href="./meet@prom.html"><h1> Meet Promesse </h1></a>
+                </div>
+                <div class="top_5">
+                <a href="./alumni.html"> <h1> Alumni</h1></a>
+                </div>
+                <div>
+                 <form action="sitesearch.php" method="post" onsubmit="return checkSearch();">
+                 <p>
+                 <label for="search"></label>
+                 <input type="text" placeholder="Search the page" id="search" name="search" />
+                 <input id="search2" type="submit" value="Go!" />
+                 </p> 
+                 </form>
+                </div>
+                <div class="top7">
+                <a href="index.html"><h1>Log in</h1> </a>
+                </div>
+                </nav>
         </header>
     </div>
     <main>
@@ -37,9 +94,9 @@
         
              <div class="hero-text">  
                 <h1 class="hero-header">
-                    From <span style="color:#FDB813 ">sun up to sun down,</span> we have the best party in town.
+                    From <span style="color:#FDB813 ">Coding is life to us,</span> we have the best you need in from us
                  </h1>
-                 <p>Sunday FEB 13</p>
+                 <p>Monday FEB 01</p>
                  <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xlarge w3-margin-bottom w3-margin-right"></i>40 Glenwood Street
                   Coventry, RI 02816</p>
                   <a href="#book" class="w3-btn w3-red w3-margin-top w3-round" style="width: 40%;">
@@ -57,15 +114,15 @@
           
             <div class="gallery">
             <div class="about-image-1">
-               <img src="https://spaces.w3schools.com/images/4_M8uIfPEZw.jpg" loading="lazy" alt="Photo by Muneeb Syed | Unsplash"/>
+               <img src="./images/c7c7761d-5717-4cba-b36c-02811b2164a6.jpg" loading="lazy" alt="Photo by Muneeb Syed | Unsplash"/>
                
             </div>
             <div class="about-image-2">
                <div class="image-list">
-                <img src="https://spaces.w3schools.com/images/Fh-Q-xfdh_o.jpg" loading="lazy" alt="Photo by Pien Muller | Unsplash"/>
+                <img src="./images/2.png" loading="lazy" alt="Photo by Pien Muller | Unsplash"/>
                </div>
                <div class="image-list">
-                <img src="https://spaces.w3schools.com/images/GrIty4BNJEE.jpg" loading="lazy"  alt="Photo by Francisco Moreno | Unsplash"/>
+                <img src="./images/4.png" loading="lazy"  alt="Photo by Francisco Moreno | Unsplash"/>
                </div>
             </div>
         </div>
@@ -77,7 +134,7 @@
         
         <div class="poster-main">
           <div class="poster-list">
-             <img src="https://spaces.w3schools.com/images/NeTf7NGXrtc.jpg" loading="lazy" alt="Photo by Taylor | Unsplash"/>
+             <img src="./images/9.png" loading="lazy" alt="Photo by Taylor | Unsplash"/>
              <div class="poster-text">
             
                  <h3>Ruth R. Channel
@@ -86,21 +143,21 @@
              </div>
           </div>
           <div class="poster-list">
-            <img src="https://spaces.w3schools.com/images/DzkBxH3yUfU.jpg" loading="lazy" alt="Photo by hafizh armynazrie | Unsplash"/>
+            <img src="./images/4.png" loading="lazy" alt="Photo by hafizh armynazrie | Unsplash"/>
             <div class="poster-text">
               <h3>Karolyn B
               </h3>
             </div>
           </div>
           <div class="poster-list">
-            <img src="https://spaces.w3schools.com/images/zndslHAXhAw.jpg" loading="lazy" alt="Photo by Obafemi Moyosade | Unsplash"/>
+            <img src="./images/9.png" loading="lazy" alt="Photo by Obafemi Moyosade | Unsplash"/>
             <div class="poster-text">
               <h3>Edwin B. McKenzie
               </h3>
             </div>
           </div>
           <div class="poster-list">
-            <img src="https://spaces.w3schools.com/images/OHOArMflSpM.jpg" loading="lazy" alt="Photo by Joshua Hanson | Unsplash"/>
+            <img src="./images/2.png" loading="lazy" alt="Photo by Joshua Hanson | Unsplash"/>
             <div class="poster-text">
         
                 <h3>William J. Smith
@@ -109,7 +166,7 @@
             </div>
          </div>
          <div class="poster-list">
-          <img src="https://spaces.w3schools.com/images/bf8APnBxoCk.jpg" loading="lazy" alt="Photo by Thiago Borrere Alvim | Unsplash"/>
+          <img src="./images/9.png" loading="lazy" alt="Photo by Thiago Borrere Alvim | Unsplash"/>
           <div class="poster-text">
          
               <h3>John L. Garrick
@@ -118,7 +175,7 @@
           </div>
        </div>
        <div class="poster-list">
-        <img src="https://spaces.w3schools.com/images/1s9TY8FRBNs.jpg" loading="lazy" alt="Photo by Music HQ | Unsplash"/>
+        <img src="./images/4.png" loading="lazy" alt="Photo by Music HQ | Unsplash"/>
         <div class="poster-text">
        
             <h3>Ruth R. Channel
@@ -136,18 +193,18 @@
 
           <div class="sponsor-main">
             <div class="sponsor-image">
-              <img src="https://spaces.w3schools.com/logo_4x.png"  loading="lazy" alt="W3Schools"/>
+              <img src="./images/c7c7761d-5717-4cba-b36c-02811b2164a6.jpg"  loading="lazy" alt="W3Schools"/>
                    
             </div>
             <div class="sponsor-image">
-              <img src="https://spaces.w3schools.com/logo_4x.png" loading="lazy" alt="W3Schools"/>
+              <img src="./images/c7c7761d-5717-4cba-b36c-02811b2164a6.jpg" loading="lazy" alt="W3Schools"/>
             </div>
             <div class="sponsor-image">
-              <img src="https://spaces.w3schools.com/logo_4x.png" loading="lazy" alt="W3Schools"/>
+              <img src="./images/c7c7761d-5717-4cba-b36c-02811b2164a6.jpg" loading="lazy" alt="W3Schools"/>
   
             </div>
             <div class="sponsor-image">
-              <img src="https://spaces.w3schools.com/logo_4x.png" loading="lazy" alt="W3Schools"/>
+              <img src="./images/c7c7761d-5717-4cba-b36c-02811b2164a6.jpg" loading="lazy" alt="W3Schools"/>
   
             </div>
             
@@ -230,7 +287,7 @@
       <div class="buy-ticket-main">
 
         <div class="buy-ticket-image"> 
-              <img src="https://spaces.w3schools.com/images/usOGcvSdvnk.jpg" loading="lazy"  alt="Photo by Vidar Nordli-Mathisen | Unsplash"/>
+              <img src="./images/ai_business_survey_-_article_image.png" loading="lazy"  alt="Photo by Vidar Nordli-Mathisen | Unsplash"/>
         </div>
         <div class="buy-ticket-form">
           <p>Please fill this form, we will send your digital ticket to your email address</p>
@@ -263,12 +320,6 @@
 
       </div>
     </main>
-    <div class="w3-padding w3-center" style="background: #FFF4A3;padding: 10px 0px !important; color:#282A35; ">
-      <div style="display: flex; justify-content: center;align-items: center; flex-wrap: wrap;">
-        <p style="margin: 10px !important ">This website was made with w3schools Spaces. Make your own free website today</p>
-        <a class="w3-margin-top w3-btn w3-text-white  w3-round-xxlarge" style=" background-color:#282A35;padding: 8px 25px;  margin:0px  !important">Start now</a>
-      </div>
-    
     </div>
 </body>
 </html>
