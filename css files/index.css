@@ -8,8 +8,7 @@
 .foot{
     display: flex;
     background-color: rgb(230, 226, 221);
-    height: 250px;
-    
+    height: 300px;
 }
 .foots{
     display: block;
@@ -19,10 +18,12 @@ p.first{
     font-size: larger;
     /* font-weight: 300; */
     margin-bottom: 30px;
+    margin-top: 50px;
 }
 p.second,.third,.fourth,.last{
     font-size: large;
     font-weight: 100;
+    margin-bottom: 5px;
 }
 hr.foo{
     margin: 0px;
