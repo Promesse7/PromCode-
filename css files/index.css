@@ -70,21 +70,21 @@ div.but_container{
 
 div.but_st{
     text-align: center;
-    width: 400px;
-    height: 100px;
+    width: 200px;
+    height: 60px;
     background-color: rgb(62, 137, 197);
     border: solid 1.5px rgb(246, 248, 250) ;
     border-radius: 2px;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 div.but_sec{
     text-align: center;
-    width: 400px;
-    height: 100px;
+    width: 200px;
+    height: 60px;
     background-color: rgb(246, 248, 250);
     border: solid 1.5px rgb(62, 137, 197) ;
     border-radius: 2px;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 p.but_inner{
@@ -95,9 +95,25 @@ p.but_inner{
 p.typing{
     text-align: left;
     margin-top: 100px;
-    font-size: small;
+    font-size:large;
 }
 
+.search_projects{
+    display: flex;
+    padding: 10px;
+
+}
+.search_projects input{
+    width: 500px;
+    height: 100px;
+    border: solid 1px #ffff;
+}
+.search_projects button{
+    width: 150px;
+    height: 100px;
+    border: solid 1px #ffff;
+    background-color: #4070f4;
+}
 /* our typing animation */
 
 
@@ -156,4 +172,3 @@ section.type{
   
   
   /* our typing animation ends here*/
-  
