@@ -8,7 +8,7 @@
 .foot{
     display: flex;
     background-color: bisque;
-    height: 400px;
+    height: 300px;
     
 }
 .foots{
@@ -37,5 +37,5 @@ hr.foo{
 
 p.foote{
     text-decoration: underline;
-    margin: 0px 10px;
+    margin: 0px 20px;
 }
