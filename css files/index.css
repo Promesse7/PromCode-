@@ -20,7 +20,7 @@ p.first{
     /* font-weight: 300; */
     margin-bottom: 30px;
 }
-p.second,.third,.fourth,.fifth{
+p.second,.third,.fourth,.last{
     font-size: large;
     font-weight: 100;
 }
