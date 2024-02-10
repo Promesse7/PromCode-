@@ -103,7 +103,7 @@ div.but_sec{
 }
 .typing_container{
     height: 200px;
-    width:80vw;
+    width:90vw;
 }
 p.typing{
     text-align: left;
@@ -115,7 +115,7 @@ p.typing{
     display: flex;
     padding: 10px;
    background-color: #fafafa;
-   width: 85vw;
+   width: 90vw;
    height: 100px;
 }
 .search_projects input{
