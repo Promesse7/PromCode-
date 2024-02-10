@@ -76,7 +76,7 @@ div.but_st{
     border: solid 1.5px rgb(246, 248, 250) ;
     border-radius: 2px;
     padding-top: 10px;
-    /* margin: 20px; */
+    margin-right: 20px;
 }
 div.but_sec{
     text-align: center;
@@ -86,6 +86,7 @@ div.but_sec{
     border: solid 1.5px rgb(62, 137, 197) ;
     border-radius: 2px;
     padding-top: 10px;
+    margin-left: 20px;
 }
 .but_st p.but_inner{
     font-size: large;
