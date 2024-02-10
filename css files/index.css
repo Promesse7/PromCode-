@@ -76,7 +76,7 @@ div.but_st{
     border: solid 1.5px rgb(246, 248, 250) ;
     border-radius: 2px;
     padding-top: 10px;
-    margin: 20px;
+    /* margin: 20px; */
 }
 div.but_sec{
     text-align: center;
@@ -116,13 +116,12 @@ p.typing{
    background-color: #fafafa;
    width: 100vw;
    height: 100px;
-   padding-left: 200px;
-   padding-right: 200px;
 }
 .search_projects input{
     width: 500px;
     height: 100px;
     border: solid 1px #a09a9a;
+    margin: 50px;
 }
 .search_projects button{
     width: 150px;
