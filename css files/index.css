@@ -103,7 +103,7 @@ div.but_sec{
 }
 .typing_container{
     height: 200px;
-    width: 100vw;
+    width:80vw;
 }
 p.typing{
     text-align: left;
@@ -115,18 +115,18 @@ p.typing{
     display: flex;
     padding: 10px;
    background-color: #fafafa;
-   width: 100vw;
+   width: 85vw;
    height: 100px;
 }
 .search_projects input{
     width: 500px;
-    height: 100px;
+    height: 80px;
     border: solid 1px #a09a9a;
     margin: 50px;
 }
 .search_projects button{
-    width: 150px;
-    height: 100px;
+    width: 160px;
+    height: 80px;
     border: solid 1px #4070f4;
     background-color: #4070f4;
 }
@@ -137,7 +137,7 @@ p.typing{
 
 
 section.type{
-    min-height: 20vh;
+    min-height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,8 +155,8 @@ section.type{
     color: #0b7413;
     font-size: 25px;
     font-weight: 600;
-      margin-top: 4vh;
-      margin-bottom: 10vh;
+      margin-top: 3vh;
+      margin-bottom: 8vh;
   }
   .text.first-text{
     color: #010718;
