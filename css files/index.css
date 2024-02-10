@@ -13,15 +13,15 @@
 }
 .foots{
     display: block;
-    margin: 50px;
+    margin: 100px;
 }
 p.first{
-    font-size: large;
+    font-size: larger;
     font-weight: 300;
     margin-bottom: 30px;
 }
-p.first,.second,.third,.fourth,.fifth{
-    font-size: medium;
+p.second,.third,.fourth,.fifth{
+    font-size: large;
     font-weight: 100;
 }
 hr.foo{
