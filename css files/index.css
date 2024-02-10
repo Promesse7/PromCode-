@@ -32,7 +32,8 @@ hr.foo{
 }
 .footer{
     display: flex;
-    margin: 2.5px;
+    margin: 0px;
+    padding: 2.5px;
     background-color: rgb(230, 226, 221);
 }
 
