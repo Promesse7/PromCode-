@@ -17,7 +17,7 @@
 }
 p.first{
     font-size: larger;
-    font-weight: 300;
+    /* font-weight: 300; */
     margin-bottom: 30px;
 }
 p.second,.third,.fourth,.fifth{
@@ -37,5 +37,5 @@ hr.foo{
 
 p.foote{
     text-decoration: underline;
-    margin: 0px 50px;
+    margin: 0px 10px;
 }
