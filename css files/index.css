@@ -71,27 +71,39 @@ div.but_container{
 div.but_st{
     text-align: center;
     width: 200px;
-    height: 60px;
+    height: 40px;
     background-color: rgb(62, 137, 197);
     border: solid 1.5px rgb(246, 248, 250) ;
     border-radius: 2px;
-    padding-top: 20px;
+    padding-top: 10px;
+    margin: 20px;
 }
 div.but_sec{
     text-align: center;
     width: 200px;
-    height: 60px;
+    height: 40px;
     background-color: rgb(246, 248, 250);
     border: solid 1.5px rgb(62, 137, 197) ;
     border-radius: 2px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
-
-p.but_inner{
+.but_st p.but_inner{
     font-size: large;
     font-weight: 400;
+    color: #ffff;
+    margin: 20px;
 }
+ 
 
+.but_sec p.but_inner{
+    font-size: large;
+    font-weight: 400;
+    color: #4070f4;
+}
+.typing_container{
+    height: 200px;
+    width: 100vw;
+}
 p.typing{
     text-align: left;
     margin-top: 100px;
@@ -101,17 +113,21 @@ p.typing{
 .search_projects{
     display: flex;
     padding: 10px;
-
+   background-color: #fafafa;
+   width: 100vw;
+   height: 100px;
+   padding-left: 200px;
+   padding-right: 200px;
 }
 .search_projects input{
     width: 500px;
     height: 100px;
-    border: solid 1px #ffff;
+    border: solid 1px #a09a9a;
 }
 .search_projects button{
     width: 150px;
     height: 100px;
-    border: solid 1px #ffff;
+    border: solid 1px #4070f4;
     background-color: #4070f4;
 }
 /* our typing animation */
