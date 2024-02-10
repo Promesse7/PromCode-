@@ -12,7 +12,7 @@
     
 }
 .foots{
-    display: flex;
+    display: block;
     margin: 50px;
 }
 p.first{
