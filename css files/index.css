@@ -17,8 +17,23 @@
 p.first{
     font-size: large;
     font-weight: 300;
+    margin-bottom: 30px;
 }
 p.first,.second,.third,.fourth,.fifth{
     font-size: medium;
     font-weight: 100;
+}
+hr.foo{
+    margin: 0px;
+    border: 1px;
+    border-color: #fff;
+    
+}
+.footer{
+    display: flex;
+    margin: 2.5px;
+}
+
+p.foote{
+    text-decoration: underline;
 }
