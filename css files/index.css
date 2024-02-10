@@ -33,9 +33,10 @@ hr.foo{
 .footer{
     display: flex;
     margin: 2.5px;
+    background-color: rgb(230, 226, 221);
 }
 
 p.foote{
     text-decoration: underline;
-    margin: 0px 20px;
+    margin: 0px 30px;
 }
