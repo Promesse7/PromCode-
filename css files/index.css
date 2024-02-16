@@ -73,10 +73,12 @@ div.but_st{
     text-align: center;
     width: 200px;
     height: 40px;
-    background-color: rgb(62, 137, 197);
-    border: solid 1.5px rgb(246, 248, 250) ;
+    background-color:  rgb(62, 137, 197) ;
+    border: solid 1.5px rgb(246, 248, 250)  ;
     border-radius: 2px;
-    margin-right: 20px;
+    padding-top: 10px;
+    margin-left: 20px;
+    
     color: #ffff;
 }
 div.but_sec{
@@ -94,7 +96,6 @@ div.but_sec{
  p.but_inner{
     font-size: large;
     font-weight: 400;
-    color: #4070f4;
 }
 .typing_container{
     height: 200px;
