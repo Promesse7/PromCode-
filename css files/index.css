@@ -7,7 +7,7 @@
 
 .foot_container{
     display: block;
-    background-color: rgb(230, 226, 221);
+    background-color: #ffff;
     padding: 50px;
 }
 .foot{
@@ -98,7 +98,7 @@ div.but_sec{
     font-weight: 400;
 }
 .typing_container{
-    height: 180px;
+    height: 150px;
     width:100vw;
 }
 p.typing{
