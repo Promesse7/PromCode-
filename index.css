@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.dark-theme{
+    --primary-color: #f1f1f5;
+    --secondary-color: #608b8b;
+    --text-color: #8390a2;
+    --bg-color: #2d2d31;
+    --nav-height: 60px;
+    --shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    --box-shadow:  rgba(0, 0, 0, 0.1);
+    --menu-icon-size: 30px;
+    --mode:#fff;
+    --mode-icon: #2d2d31;
+}
+:root{
+    --primary-color: #3a47d5;
+    --secondary-color: #00d2ff;
+    --text-color: #8390a2;
+    --bg-color: #fff;
+    --nav-height: 60px;
+    --shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    --box-shadow:  rgba(0, 0, 0, 0.1);
+    --menu-icon-size: 30px;
+    --mode:#2d2d31;
+    --mode-icon: #fff;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--bg-color);
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+.image{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile-card{
+    max-width: 370px;
+    width: 100%;
+    background-color: var(--bg-color);
+    box-shadow:0px 10px 20px var(--box-shadow)  ;
+    border-radius: 24px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.profile-card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 36%;
+    border-radius: 24px 24px 0 0;
+    background-color: var(--primary-color);
+    transition: .5s ease-in-out;
+}
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.text-data .name{
+    font-size: 22px;
+    font-weight: 500;
+}
+.text-data .job{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.profile-card .media-buttons{
+    display: flex;
+    align-items: center; 
+}
+.media-buttons .link{
+    background-color: var(--primary-color);
+    text-decoration: none;
+    font-size: 18px;
+    margin: auto;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    color: var(--bg-color);
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+}
+.media-buttons .link:hover{
+    filter: brightness(.8);
+}
+.link.fb{
+    background-color: #4267B2;
+}
+.link.twit{
+    background-color: #1DA1F2;
+}
+.link.git{
+    background-color: #333;
+}
+.link.dis{
+    background-color: rgb(5, 25, 70);
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+
+}
+.buttons .button{
+    background-color: var(--primary-color);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    margin: auto;
+    /* height: 34px;
+    width: 34px; */
+    border-radius: 24px;
+    color: var(--bg-color);
+    padding: 8px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease; 
+}
+.buttons .button:hover{
+    background-color: var(--primary-color);
+}
+.profile-card .analytics{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.analytics .data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7e7;
+}
+ .data:last-child{
+    border-right: none;
+ }
+.data i{
+    color: var(--primary-color);
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.mode-change{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 50px 60px;
+    padding: 5px;
+    font-size: 20px;
+    color: var(--bg-color);
+    cursor: pointer;
+    color: #070707;
+    border: 1.5px solid #12121252;
+    border-radius: 50%;
+    background: var(--bg-color);
+}
+.mode-change:hover{
+    color: var(--mode-color);
+    background: var(--mode);
+}

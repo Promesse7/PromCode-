@@ -3,100 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PromCode | Sign in</title>
-    <link rel="stylesheet" href="./css files/spinner.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <link rel="icon" href="./images/ai_business_survey_-_article_image.png">
-    <script src="./js/spinner.js" defer></script>
-    <link rel="stylesheet" href="./css files/sign_in.css">
-    <link rel="stylesheet" href="./css files/popup.css">
-   
+    <title>Profile Card UI Design</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- ---------- boxicons ----------- -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-   
-    <section>
-        
-    <div class="login_box" > 
-        <form action="">
-            <h2>Login</h2>
-            <div class="input_box">
-             <span class="icon"><ion-icon name="mail"></ion-icon></span>
-             <input type="email" name="email" id="emailInput" required >
-             <label for="email" >Email </label>
+    <span class="mode-change"><i class='bx bxs-moon'></i></span>
+    <div class="profile-card">
+        <div class="image">
+            <img src="./2.png" alt="" class="profile-img">
+        </div>
+        <div class="text-data">
+            <span class="name">Promesse</span>
+            <span class="job">Full-stack Developer</span>
+        </div>
+
+        <div class="media-buttons">
+            <a href="#" class="link fb">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="#" class="link twit">
+                <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="#" class="link git">
+                <i class='bx bxl-github'></i>
+            </a>
+            <a href="#" class="link dis">
+                <i class='bx bxl-discord-alt' ></i>
+            </a>
+        </div>
+        <div class="buttons">
+            <div class="button">Subscribe</div>
+            <div class="button">Message</div>
+        </div>
+        <div class="analytics">
+            <div class="data"> 
+                <i class='bx bx-heart'></i>
+                <span class="number">80k</span>
             </div>
-            <div class="input_box">
-                <span class="icon"> <ion-icon name="lock-closed"></ion-icon></span>
-                <input type="password" name="password" id="passwordInput" required>
-                <label for="password">Password</label>
-               </div>
-               <div class="remember_forgot">
-               <label>
-                <input type="checkbox">Remember me
-               </label> 
-               <a href="#">Forgot Password?</a>
-               </div>
-               <div class="button" onclick="login()">Login</div>
-               <div class="register_link">
-                <p>Don't have an Account? <a href="./css files/sign_in.css">Register!</a></p>
-               </div>
-        </form>
-    </div>
-</section>
-
-<!--------------------------------- starting of the popup ----------------------->
-
-<div class="popup" id="popup">
-    <section class="image">
-        <h6 >You've made it!</h6> <br>
-        <img class="my-image" src="./images/2.png" alt="my image">
-    </section>
-          
-        <h2 >Thanks</h2>
-        <p>Your details have been submitted to our server successfully.</p>
-        <br>
-        <h4>You can now interact with PromCode</h4>
-       <div class="button100">
-         <a href="./promcode .html"  onclick="closePopup()">Ok</a> 
-    </div> 
-
-    </div>
-
+            <div class="data"> 
+                <i class='bx bx-message-rounded'></i>
+                <span class="number">55k</span>
+            </div>
+            <div class="data"> 
+                <i class='bx bxs-share' ></i>
+                <span class="number">23k</span>
+            </div>
+        </div>
     </div>
     <script>
-       
-let user=[
-    {email:"promesserukundo@gmail.com", password:"prom123"},
-    {email:"mfitep6@gmail.com", password:"mp123"},
-    {email:"israelniy32@gmail.com", password:"niyigena3211"}
-]
+        const modeChange = document.querySelector('.mode-change');
+        const body = document.querySelector('body');
+        modeChange.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+        });
 
-const emailInput=document.getElementById("emailInput")
-const passwordInput=document.getElementById("passwordInput")
-
-function login() {
-    const email=emailInput.value;
-    const password=passwordInput.value;
-    let loginSuccessful=false
-    user.forEach((user)=>{
-        if (user.email==email && user.password==password) {
-           alert("Login Successful") 
-           loginSuccessful=true
-           
-           setTimeout(() => {
-            popup.classList.add('open-popup')
-        }, 200);
-        
-        }
-    })
-    
-    if (!loginSuccessful) {
-        alert("User inputs not registered")   
-    }
-    
-}
     </script>
-
-
-<div class="loader"></div>
 </body>
 </html>
